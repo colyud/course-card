@@ -12,7 +12,7 @@ const data = [
     },
     {
         id: 2,
-        courseName: "From figma to code",
+        courseName: "The frontend develop career path",
         teacher: {
             name: "Gary Simon",
             img: "https://scrimba.com/avatars/designcourse/64",
