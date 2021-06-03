@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body {
     background: hsla(242, 58%, 73%, 1);
@@ -39,12 +40,13 @@ main {
     align-items: center;
     border-radius: 10px 10px 0 0;
 }
-.blob {
+.blob-container {
     position: absolute;
+    display: block;
+}
+.blob {
     z-index: 0;
     opacity: 0.5;
-    height: 200px;
-    top: 30px;
     margin: 1em;
 }
 .course-name {
