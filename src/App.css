@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: hsla(242, 58%, 73%, 1);
+
+    background: linear-gradient(135deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(242, 58%, 73%, 1) 0%, hsla(157, 72%, 82%, 1) 100%);
+    font-family: Roboto, sans-serif;
+    color: rgb(67, 66, 71);
+}
+#root {
+    width: 400px;
+    height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+}
+.header {
+    margin-top: 5em;
+}
+main {
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.card-header {
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    border-radius: 10px;
+}
+.blob {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+    height: 200px;
+    top: 30px;
+    left: 100px;
+}
+.course-name {
+    font-weight: 700;
+    z-index: 1;
+}
+
+.course-info {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 2.5em;
+}
+/* .duration-info {
+    display: flex;
+    flex-direction: row;
+} */
+.course-info p {
+    font-size: 0.8em;
+    line-height: 1.6;
+    font-weight: 300;
+}
+.course-info p span {
+    font-weight: 700;
+}
+.avatar {
+    border-radius: 50%;
+    height: 100%;
+}
+.level {
+    text-align: left;
+}
