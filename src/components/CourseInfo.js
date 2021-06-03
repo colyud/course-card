@@ -6,7 +6,7 @@ function CourseInfo({ courses }) {
         <div className="course-info">
             <div className="main-info">
                 <div className="duration-info">
-                    <p className="amount">{`${lessons} lessons | ${duration} min`}</p>
+                    <p className="amount">{`${lessons} lessons | ${duration}`}</p>
                     <p className="teacher-name">
                         with <span>{teacher.name}</span>
                     </p>

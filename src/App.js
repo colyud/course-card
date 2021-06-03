@@ -37,7 +37,7 @@ function App() {
                     <h2 className="course-name">{courses[index].courseName}</h2>
                     <img className="blob" src={img} alt="blob" height="50px" />
                 </header>
-                <CourseInfo courses={courses[0]} />
+                <CourseInfo courses={courses[index]} />
             </main>
             <div className="btn-container">
                 <button className="btn prev" onClick={prevCourse}>
