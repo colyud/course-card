@@ -2,7 +2,8 @@ import "./App.css";
 import React, { useState } from "react";
 import courseData from "./data";
 import CourseInfo from "./components/CourseInfo";
-import img from "./image/blob.svg";
+import Blob from "./components/Blob";
+var randomColor = require("randomcolor"); // import the script
 
 function App() {
     const [courses, setCourses] = useState(courseData);
@@ -29,13 +30,19 @@ function App() {
             return checkIndex(newIndex);
         });
     }
+    const cardbg = randomColor({
+        luminosity: "light",
+        format: "rgba",
+        alpha: 0.4, // e.g. 'rgba(9, 1, 107, 0.5)',
+    });
     return (
         <>
-            <h1 className="header">Course Card</h1>
+            <h2 className="header">Course Card</h2>
             <main>
-                <header className="card-header">
-                    <h2 className="course-name">{courses[index].courseName}</h2>
-                    <img className="blob" src={img} alt="blob" height="50px" />
+                <header className="card-header" style={{ backgroundColor: cardbg }}>
+                    <h1 className="course-name">{courses[index].courseName}</h1>
+                    <Blob />
+                    {/* <Blob /> */}
                 </header>
                 <CourseInfo courses={courses[index]} />
             </main>

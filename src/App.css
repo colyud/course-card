@@ -37,7 +37,6 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: coral;
     border-radius: 10px 10px 0 0;
 }
 .blob {
@@ -46,11 +45,13 @@ main {
     opacity: 0.5;
     height: 200px;
     top: 30px;
-    left: 100px;
+    margin: 1em;
 }
 .course-name {
     font-weight: 700;
     z-index: 1;
+    width: 320px;
+    text-align: right;
 }
 
 .course-info {
@@ -58,7 +59,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0.5em;
+    padding: 1em 0.7em;
 }
 .main-info {
     display: flex;
@@ -66,14 +67,12 @@ main {
     justify-content: space-between;
     height: 2.5em;
 }
-/* .duration-info {
-    display: flex;
-    flex-direction: row;
-} */
 .course-info p {
     font-size: 0.8em;
     line-height: 1.6;
     font-weight: 300;
+    text-align: left;
+    width: 150px;
 }
 .course-info p span {
     font-weight: 700;
@@ -81,9 +80,6 @@ main {
 .avatar {
     border-radius: 50%;
     height: 100%;
-}
-.level {
-    text-align: left;
 }
 
 .btn-container {

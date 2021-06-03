@@ -15,7 +15,7 @@ const data = [
         courseName: "The Frontend Develop Career Path",
         teacher: {
             name: "Per Harald Borgen",
-            img: "https://scrimba.com/avatars/designcourse/64",
+            img: "https://scrimba.com/avatars/perborgen/64",
         },
         lessons: 1087,
         duration: "82 hours",
