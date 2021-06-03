@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import courseData from "./data";
 import CourseInfo from "./components/CourseInfo";
 import Blob from "./components/Blob";
-var randomColor = require("randomcolor"); // import the script
+var randomColor = require("randomcolor");
 
 function App() {
     const [courses, setCourses] = useState(courseData);
@@ -33,17 +33,29 @@ function App() {
     const cardbg = randomColor({
         luminosity: "light",
         format: "rgba",
-        alpha: 0.4, // e.g. 'rgba(9, 1, 107, 0.5)',
+        alpha: 0.4,
     });
+
+    const left = () => {
+        return Math.floor(Math.random() * 400) - 100;
+    };
+    const top = () => {
+        return Math.floor(Math.random() * 200) - 100;
+    };
     return (
         <>
-            <h2 className="header">Course Card</h2>
+            <h2 className="header">My favorite Scrimba courses</h2>
             <main>
                 <header className="card-header" style={{ backgroundColor: cardbg }}>
                     <h1 className="course-name">{courses[index].courseName}</h1>
-                    <Blob />
-                    {/* <Blob /> */}
+                    <div className="blob-container" style={{ left: left(), top: top() }}>
+                        <Blob />
+                    </div>
+                    <div className="blob-container" style={{ left: left(), top: top() }}>
+                        <Blob />
+                    </div>
                 </header>
+
                 <CourseInfo courses={courses[index]} />
             </main>
             <div className="btn-container">
