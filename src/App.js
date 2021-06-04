@@ -37,10 +37,10 @@ function App() {
     });
 
     const left = () => {
-        return Math.floor(Math.random() * 400) - 100;
+        return Math.floor(Math.random() * 350) - 100;
     };
     const top = () => {
-        return Math.floor(Math.random() * 200) - 100;
+        return Math.floor(Math.random() * 200) - 50;
     };
     return (
         <>
