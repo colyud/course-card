@@ -34,7 +34,7 @@ main {
     margin-top: 7em;
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: #fcfcfc;
     border-radius: 10px;
 }
 .card-header {
