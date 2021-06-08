@@ -6,7 +6,7 @@ import Blob from "./components/Blob";
 var randomColor = require("randomcolor");
 
 function App() {
-    const [courses, setCourses] = useState(courseData);
+    const courses = courseData;
     const [index, setIndex] = useState(0);
 
     function checkIndex(i) {
@@ -48,6 +48,9 @@ function App() {
             <main>
                 <header className="card-header" style={{ backgroundColor: cardbg }}>
                     <h1 className="course-name">{courses[index].courseName}</h1>
+                    <div className="blob-container" style={{ left: left(), top: top() }}>
+                        <Blob />
+                    </div>
                     <div className="blob-container" style={{ left: left(), top: top() }}>
                         <Blob />
                     </div>
